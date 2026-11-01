@@ -1,0 +1,32 @@
+Backbone: resnet18
+Test samples: 15
+Disease accuracy : 0.533
+Macro F1         : 0.348
+Macro precision  : 0.268
+Macro recall     : 0.500
+Severity accuracy: 0.467
+Risk-score MAE   : 0.298
+
+== Disease report ==
+               precision    recall  f1-score   support
+
+       Normal       0.57      1.00      0.73         4
+         PCOS       0.00      0.00      0.00         3
+Endometriosis       0.00      0.00      0.00         4
+  Adenomyosis       0.50      1.00      0.67         4
+
+     accuracy                           0.53        15
+    macro avg       0.27      0.50      0.35        15
+ weighted avg       0.29      0.53      0.37        15
+
+== Severity report ==
+              precision    recall  f1-score   support
+
+        None       0.57      1.00      0.73         4
+        Mild       0.00      0.00      0.00         4
+    Moderate       0.38      0.60      0.46         5
+      Severe       0.00      0.00      0.00         2
+
+    accuracy                           0.47        15
+   macro avg       0.24      0.40      0.30        15
+weighted avg       0.28      0.47      0.35        15

@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "1. Generate data", "type": "debugpy", "request": "launch", "module": "src.generate_data", "cwd": "${workspaceFolder}"},
+    {"name": "2. Train ResNet18", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "resnet18"], "cwd": "${workspaceFolder}"},
+    {"name": "Train ResNet50", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "resnet50"], "cwd": "${workspaceFolder}"},
+    {"name": "Train ResNet101", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "resnet101"], "cwd": "${workspaceFolder}"},
+    {"name": "Train EfficientNet B0", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "efficientnet_b0"], "cwd": "${workspaceFolder}"},
+    {"name": "Train DenseNet121", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "densenet121"], "cwd": "${workspaceFolder}"},
+    {"name": "Train VGG16", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "vgg16"], "cwd": "${workspaceFolder}"},
+    {"name": "Train VGG19", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "vgg19"], "cwd": "${workspaceFolder}"},
+    {"name": "Train ViT B/16", "type": "debugpy", "request": "launch", "module": "src.train", "args": ["--backbone", "vit_b_16"], "cwd": "${workspaceFolder}"},
+    {"name": "Compare all backbones", "type": "debugpy", "request": "launch", "module": "src.compare", "args": ["--backbones", "all"], "cwd": "${workspaceFolder}"},
+    {"name": "Evaluate ResNet18", "type": "debugpy", "request": "launch", "module": "src.evaluate", "args": ["--backbone", "resnet18"], "cwd": "${workspaceFolder}"},
+    {"name": "Predict + explain", "type": "debugpy", "request": "launch", "module": "src.predict", "args": ["--index", "0", "--backbone", "resnet18"], "cwd": "${workspaceFolder}"}
+  ]
+}

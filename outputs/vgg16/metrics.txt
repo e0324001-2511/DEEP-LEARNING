@@ -1,0 +1,32 @@
+Backbone: vgg16
+Test samples: 15
+Disease accuracy : 0.467
+Macro F1         : 0.317
+Macro precision  : 0.232
+Macro recall     : 0.500
+Severity accuracy: 0.267
+Risk-score MAE   : 0.270
+
+== Disease report ==
+               precision    recall  f1-score   support
+
+       Normal       0.00      0.00      0.00         4
+         PCOS       0.43      1.00      0.60         3
+Endometriosis       0.00      0.00      0.00         4
+  Adenomyosis       0.50      1.00      0.67         4
+
+     accuracy                           0.47        15
+    macro avg       0.23      0.50      0.32        15
+ weighted avg       0.22      0.47      0.30        15
+
+== Severity report ==
+              precision    recall  f1-score   support
+
+        None       0.00      0.00      0.00         4
+        Mild       0.23      0.75      0.35         4
+    Moderate       0.50      0.20      0.29         5
+      Severe       0.00      0.00      0.00         2
+
+    accuracy                           0.27        15
+   macro avg       0.18      0.24      0.16        15
+weighted avg       0.23      0.27      0.19        15
